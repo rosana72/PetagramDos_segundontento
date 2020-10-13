@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PetagramDos</string>
+    <string name="item_favorite_name">Favoritos</string>
+    <string name="toast_camera_button">Camera button touched!</string>
+    <string name="item_contact_name">Contacto</string>
+    <string name="item_about_name">Acerca de</string>
+    <string name="activity_main_hint_name">Nombre</string>
+    <string name="activity_main_hint_email">Correo</string>
+    <string name="activity_main_hint_message">Mensaje</string>
+    <string name="activity_main_button_next">Enviar Comentario</string>
+    <string name="activity_main_tab_one">Mascotas</string>
+    <string name="activity_main_tab_two">Perfil</string>
+    <string name="my_pet_name">Sasha</string>
+    <string name="about_me">Hola,soy Rosana</string>
+</resources>

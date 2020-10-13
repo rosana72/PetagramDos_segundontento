@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/favorite"
+        android:icon="@drawable/ic_favorite"
+        android:title="@string/item_favorite_name"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/contact"
+        android:title="@string/item_contact_name"
+        app:showAsAction="collapseActionView" />
+
+    <item
+        android:id="@+id/about"
+        android:title="@string/item_about_name"
+        app:showAsAction="collapseActionView" />
+
+</menu>
