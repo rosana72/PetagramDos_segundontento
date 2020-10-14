@@ -21,6 +21,9 @@ public class ProfileFragment extends Fragment {
 
     private RecyclerView recyclerPetProfile;
 
+    public ProfileFragment() {
+    }
+
     public ProfileFragment(List<PetModel> petModelList) {
         this.petModelList = petModelList;
     }

@@ -6,6 +6,13 @@ public class PetModel {
     private int rating;
     private boolean favorite;
 
+    public PetModel(int image, String name, int rating) {
+        this.image = image;
+        this.name = name;
+        this.rating = rating;
+        this.favorite = false;
+    }
+
     public PetModel(int image, String name, int rating, boolean favorite) {
         this.image = image;
         this.name = name;

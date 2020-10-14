@@ -38,7 +38,8 @@ public class PetProfileAdapter extends RecyclerView.Adapter<PetProfileAdapter.Pe
 
     @Override
     public int getItemCount() {
-        return petModelList.size();
+        //return petModelList.size();
+        return 0;
     }
 
     public static class PetViewHolder extends RecyclerView.ViewHolder {

@@ -3,5 +3,5 @@
     <item name="toolbarMain" type="id" />
     <item name="floatingButtonMain" type="id" />
     <item name="recyclerPet" type="id" />
-    <item name="viewPager2" type="id">view2</item>
+    <item name="viewPager2" type="id"/>
 </resources>

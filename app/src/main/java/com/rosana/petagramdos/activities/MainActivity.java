@@ -7,6 +7,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
+import androidx.viewpager.widget.ViewPager;
 import androidx.viewpager2.widget.ViewPager2;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -48,10 +49,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ViewPager2 viewPager2 = findViewById(R.id.viewPager2);
-        viewPager2.setAdapter(new PageAdapter(this, getFragments()));
-        final TabLayout tabLayout = findViewById(R.id.tabLayout);
-        TabLayoutMediator tabLayoutMediator = new TabLayoutMediator(tabLayout, viewPager2, (tab, position) -> {
+        ViewPager viewPager = (ViewPager) findViewById(R.id.vPager);
+        viewPager.setAdapter(new PageAdapter(getSupportFragmentManager(), getFragments()));
+        TabLayout tabLayout = findViewById(R.id.tabLayout);
+
+        tabLayout.setupWithViewPager( viewPager );
+
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_pet_list);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_pet_profile);
+
+        /*TabLayoutMediator tabLayoutMediator = new TabLayoutMediator(tabLayout, viewPager2, (tab, position) -> {
             switch (position + 1) {
                 case 1:
                     tab.setText(R.string.activity_main_tab_one);
@@ -65,7 +72,8 @@ public class MainActivity extends AppCompatActivity {
 
 
             }
-        });
+        });*/
+        TabLayoutMediator tabLayoutMediator = new TabLayoutMediator();
         tabLayoutMediator.attach();
 
         FloatingActionButton floatingButtonMain = findViewById(R.id.floatingButtonMain);

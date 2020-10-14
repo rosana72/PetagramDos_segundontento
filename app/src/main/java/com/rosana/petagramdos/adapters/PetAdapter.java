@@ -39,7 +39,7 @@ public class PetAdapter extends RecyclerView.Adapter<PetAdapter.PetViewHolder> {
             @Override
             public void onClick(View view) {
                 petModel.setRating(petModel.getRating() + 1);
-                petModel.setFavorite();
+                petModel.setFavorite(true);
                 notifyDataSetChanged();
             }
         });
